@@ -20,3 +20,12 @@ git rm A.js
 git add a.js
 git commit -m '提交说明'
 ```
+
+```
+Q:
+.gitignore失效的解决办法
+A:
+git rm -r --cached .
+git add .
+git commit -m 'update'
+```
