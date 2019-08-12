@@ -29,3 +29,13 @@ git rm -r --cached .
 git add .
 git commit -m 'update'
 ```
+
+```
+Q:
+Git误删分支恢复方法
+A:
+不小心删除本地分支和远程分支，使用如下方法恢复代码
+git log -a 找到提交的commit id
+git branch recover_branch fc4b7dca5e424207c6307118fda69215ec842555
+git checkout recover_branch
+```
